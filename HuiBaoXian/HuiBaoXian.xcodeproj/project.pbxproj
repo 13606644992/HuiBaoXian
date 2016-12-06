@@ -33,6 +33,10 @@
 		9EF2768D1DDAFF710098BE99 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EF276881DDAFF710098BE99 /* libWeChatSDK.a */; };
 		9EF2768E1DDAFF710098BE99 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9EF276891DDAFF710098BE99 /* README.txt */; };
 		9EF276901DDAFFF40098BE99 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EF2768F1DDAFFF40098BE99 /* libsqlite3.0.tbd */; };
+		B64995111DF68B65001D08F9 /* HomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = B64995101DF68B65001D08F9 /* HomeController.m */; };
+		B64995141DF68B7B001D08F9 /* MallController.m in Sources */ = {isa = PBXBuildFile; fileRef = B64995131DF68B7B001D08F9 /* MallController.m */; };
+		B64995181DF68B8F001D08F9 /* RoomController.m in Sources */ = {isa = PBXBuildFile; fileRef = B64995171DF68B8F001D08F9 /* RoomController.m */; };
+		B649951B1DF68B9F001D08F9 /* MyController.m in Sources */ = {isa = PBXBuildFile; fileRef = B649951A1DF68B9F001D08F9 /* MyController.m */; };
 		CC651FCB6CD47506214E7696 /* libPods-HuiBaoXian.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5768B0E8683652C95054BF44 /* libPods-HuiBaoXian.a */; };
 /* End PBXBuildFile section */
 
@@ -96,6 +100,14 @@
 		9EF2768B1DDAFF710098BE99 /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
 		9EF2768C1DDAFF710098BE99 /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
 		9EF2768F1DDAFFF40098BE99 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		B649950F1DF68B65001D08F9 /* HomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeController.h; sourceTree = "<group>"; };
+		B64995101DF68B65001D08F9 /* HomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeController.m; sourceTree = "<group>"; };
+		B64995121DF68B7B001D08F9 /* MallController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MallController.h; sourceTree = "<group>"; };
+		B64995131DF68B7B001D08F9 /* MallController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MallController.m; sourceTree = "<group>"; };
+		B64995161DF68B8F001D08F9 /* RoomController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoomController.h; sourceTree = "<group>"; };
+		B64995171DF68B8F001D08F9 /* RoomController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoomController.m; sourceTree = "<group>"; };
+		B64995191DF68B9F001D08F9 /* MyController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyController.h; sourceTree = "<group>"; };
+		B649951A1DF68B9F001D08F9 /* MyController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +193,10 @@
 				9EF276311DDABA5F0098BE99 /* ViewController.h */,
 				9EF276321DDABA5F0098BE99 /* ViewController.m */,
 				9EF276341DDABA5F0098BE99 /* Main.storyboard */,
+				B64995021DF689E2001D08F9 /* HomePage */,
+				B64995011DF689E0001D08F9 /* InsuranceMall */,
+				B64995001DF689DD001D08F9 /* InsurersClassroom */,
+				B64994FF1DF689D9001D08F9 /* My */,
 				9EF276371DDABA5F0098BE99 /* Assets.xcassets */,
 				9EF276731DDAF9840098BE99 /* Image */,
 				9EF276391DDABA5F0098BE99 /* LaunchScreen.storyboard */,
@@ -261,6 +277,142 @@
 				9EF2768C1DDAFF710098BE99 /* WXApiObject.h */,
 			);
 			name = WeiChatPay;
+			sourceTree = "<group>";
+		};
+		B64994FF1DF689D9001D08F9 /* My */ = {
+			isa = PBXGroup;
+			children = (
+				B649950E1DF68B2E001D08F9 /* MyController */,
+				B649950D1DF68B2C001D08F9 /* MyView */,
+				B649950C1DF68B29001D08F9 /* MyModel */,
+			);
+			name = My;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		B64995001DF689DD001D08F9 /* InsurersClassroom */ = {
+			isa = PBXGroup;
+			children = (
+				B649950B1DF68B17001D08F9 /* RoomController */,
+				B649950A1DF68B11001D08F9 /* RoomView */,
+				B64995091DF68B05001D08F9 /* RoomModel */,
+			);
+			name = InsurersClassroom;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		B64995011DF689E0001D08F9 /* InsuranceMall */ = {
+			isa = PBXGroup;
+			children = (
+				B64995081DF68AEE001D08F9 /* MallController */,
+				B64995071DF68AEC001D08F9 /* MallView */,
+				B64995061DF68AE9001D08F9 /* MallModel */,
+			);
+			name = InsuranceMall;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		B64995021DF689E2001D08F9 /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				B64995031DF68ABF001D08F9 /* HomeController */,
+				B64995041DF68ACB001D08F9 /* HomeView */,
+				B64995051DF68ACD001D08F9 /* HomeModel */,
+			);
+			name = HomePage;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		B64995031DF68ABF001D08F9 /* HomeController */ = {
+			isa = PBXGroup;
+			children = (
+				B649950F1DF68B65001D08F9 /* HomeController.h */,
+				B64995101DF68B65001D08F9 /* HomeController.m */,
+			);
+			name = HomeController;
+			sourceTree = "<group>";
+		};
+		B64995041DF68ACB001D08F9 /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = HomeView;
+			sourceTree = "<group>";
+		};
+		B64995051DF68ACD001D08F9 /* HomeModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = HomeModel;
+			sourceTree = "<group>";
+		};
+		B64995061DF68AE9001D08F9 /* MallModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = MallModel;
+			sourceTree = "<group>";
+		};
+		B64995071DF68AEC001D08F9 /* MallView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = MallView;
+			sourceTree = "<group>";
+		};
+		B64995081DF68AEE001D08F9 /* MallController */ = {
+			isa = PBXGroup;
+			children = (
+				B64995121DF68B7B001D08F9 /* MallController.h */,
+				B64995131DF68B7B001D08F9 /* MallController.m */,
+			);
+			name = MallController;
+			sourceTree = "<group>";
+		};
+		B64995091DF68B05001D08F9 /* RoomModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = RoomModel;
+			sourceTree = "<group>";
+		};
+		B649950A1DF68B11001D08F9 /* RoomView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = RoomView;
+			sourceTree = "<group>";
+		};
+		B649950B1DF68B17001D08F9 /* RoomController */ = {
+			isa = PBXGroup;
+			children = (
+				B64995161DF68B8F001D08F9 /* RoomController.h */,
+				B64995171DF68B8F001D08F9 /* RoomController.m */,
+			);
+			name = RoomController;
+			sourceTree = "<group>";
+		};
+		B649950C1DF68B29001D08F9 /* MyModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = MyModel;
+			sourceTree = "<group>";
+		};
+		B649950D1DF68B2C001D08F9 /* MyView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = MyView;
+			sourceTree = "<group>";
+		};
+		B649950E1DF68B2E001D08F9 /* MyController */ = {
+			isa = PBXGroup;
+			children = (
+				B64995191DF68B9F001D08F9 /* MyController.h */,
+				B649951A1DF68B9F001D08F9 /* MyController.m */,
+			);
+			name = MyController;
 			sourceTree = "<group>";
 		};
 		C62D156E7FC47CE93695295A /* Frameworks */ = {
@@ -470,9 +622,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B64995111DF68B65001D08F9 /* HomeController.m in Sources */,
 				9EF276331DDABA5F0098BE99 /* ViewController.m in Sources */,
+				B64995181DF68B8F001D08F9 /* RoomController.m in Sources */,
 				9EF276301DDABA5F0098BE99 /* AppDelegate.m in Sources */,
+				B649951B1DF68B9F001D08F9 /* MyController.m in Sources */,
 				9EF2762D1DDABA5F0098BE99 /* main.m in Sources */,
+				B64995141DF68B7B001D08F9 /* MallController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
