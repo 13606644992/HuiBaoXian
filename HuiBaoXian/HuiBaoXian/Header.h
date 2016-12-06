@@ -1,3 +1,11 @@
+//首页
+#import "HomeController.h"
+//保险商城
+#import "MallController.h"
+//保险课堂
+#import "RoomController.h"
+//我
+#import "MyController.h"
 
 
 
@@ -11,8 +19,11 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
-#import "DataManager.h"
-
+//广播
+#import "UADScrollView.h"
+//轮播
+#import "AEImagePlayerView.h"
+#import "AEPageView.h"
 
 
 

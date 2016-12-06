@@ -10,6 +10,7 @@
 #import "UPPaymentControl.h"
 #import "WXApi.h"
 #import <AlipaySDK/AlipaySDK.h>
+#import "Header.h"
 
 
 @interface AppDelegate ()<WXApiDelegate>
@@ -23,7 +24,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     [WXApi registerApp:@"微信ID" withDescription:@"demo 2.0"];
-
+    [ViewController setTabBarViewNav];
     
     return YES;
 }

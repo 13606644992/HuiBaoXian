@@ -37,6 +37,11 @@
 		B64995141DF68B7B001D08F9 /* MallController.m in Sources */ = {isa = PBXBuildFile; fileRef = B64995131DF68B7B001D08F9 /* MallController.m */; };
 		B64995181DF68B8F001D08F9 /* RoomController.m in Sources */ = {isa = PBXBuildFile; fileRef = B64995171DF68B8F001D08F9 /* RoomController.m */; };
 		B649951B1DF68B9F001D08F9 /* MyController.m in Sources */ = {isa = PBXBuildFile; fileRef = B649951A1DF68B9F001D08F9 /* MyController.m */; };
+		B649951F1DF6940F001D08F9 /* UADScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = B649951E1DF6940F001D08F9 /* UADScrollView.m */; };
+		B64995251DF69725001D08F9 /* AEElement.m in Sources */ = {isa = PBXBuildFile; fileRef = B64995221DF69725001D08F9 /* AEElement.m */; };
+		B64995261DF69725001D08F9 /* AEImagePlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = B64995241DF69725001D08F9 /* AEImagePlayerView.m */; };
+		B649952B1DF69735001D08F9 /* AEPageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B64995281DF69735001D08F9 /* AEPageModel.m */; };
+		B649952C1DF69735001D08F9 /* AEPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = B649952A1DF69735001D08F9 /* AEPageView.m */; };
 		CC651FCB6CD47506214E7696 /* libPods-HuiBaoXian.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5768B0E8683652C95054BF44 /* libPods-HuiBaoXian.a */; };
 /* End PBXBuildFile section */
 
@@ -108,6 +113,16 @@
 		B64995171DF68B8F001D08F9 /* RoomController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoomController.m; sourceTree = "<group>"; };
 		B64995191DF68B9F001D08F9 /* MyController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyController.h; sourceTree = "<group>"; };
 		B649951A1DF68B9F001D08F9 /* MyController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyController.m; sourceTree = "<group>"; };
+		B649951D1DF6940F001D08F9 /* UADScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UADScrollView.h; sourceTree = "<group>"; };
+		B649951E1DF6940F001D08F9 /* UADScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UADScrollView.m; sourceTree = "<group>"; };
+		B64995211DF69725001D08F9 /* AEElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEElement.h; sourceTree = "<group>"; };
+		B64995221DF69725001D08F9 /* AEElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AEElement.m; sourceTree = "<group>"; };
+		B64995231DF69725001D08F9 /* AEImagePlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEImagePlayerView.h; sourceTree = "<group>"; };
+		B64995241DF69725001D08F9 /* AEImagePlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AEImagePlayerView.m; sourceTree = "<group>"; };
+		B64995271DF69735001D08F9 /* AEPageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEPageModel.h; sourceTree = "<group>"; };
+		B64995281DF69735001D08F9 /* AEPageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AEPageModel.m; sourceTree = "<group>"; };
+		B64995291DF69735001D08F9 /* AEPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEPageView.h; sourceTree = "<group>"; };
+		B649952A1DF69735001D08F9 /* AEPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AEPageView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,6 +213,7 @@
 				B64995001DF689DD001D08F9 /* InsurersClassroom */,
 				B64994FF1DF689D9001D08F9 /* My */,
 				9EF276371DDABA5F0098BE99 /* Assets.xcassets */,
+				B649951C1DF693C6001D08F9 /* Libs */,
 				9EF276731DDAF9840098BE99 /* Image */,
 				9EF276391DDABA5F0098BE99 /* LaunchScreen.storyboard */,
 				9EF2763C1DDABA5F0098BE99 /* Info.plist */,
@@ -415,6 +431,32 @@
 			name = MyController;
 			sourceTree = "<group>";
 		};
+		B649951C1DF693C6001D08F9 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				B64995201DF696D9001D08F9 /* AEScrollView */,
+				B649951D1DF6940F001D08F9 /* UADScrollView.h */,
+				B649951E1DF6940F001D08F9 /* UADScrollView.m */,
+			);
+			name = Libs;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		B64995201DF696D9001D08F9 /* AEScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				B64995211DF69725001D08F9 /* AEElement.h */,
+				B64995221DF69725001D08F9 /* AEElement.m */,
+				B64995231DF69725001D08F9 /* AEImagePlayerView.h */,
+				B64995241DF69725001D08F9 /* AEImagePlayerView.m */,
+				B64995271DF69735001D08F9 /* AEPageModel.h */,
+				B64995281DF69735001D08F9 /* AEPageModel.m */,
+				B64995291DF69735001D08F9 /* AEPageView.h */,
+				B649952A1DF69735001D08F9 /* AEPageView.m */,
+			);
+			name = AEScrollView;
+			sourceTree = "<group>";
+		};
 		C62D156E7FC47CE93695295A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -622,12 +664,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B64995251DF69725001D08F9 /* AEElement.m in Sources */,
+				B64995261DF69725001D08F9 /* AEImagePlayerView.m in Sources */,
 				B64995111DF68B65001D08F9 /* HomeController.m in Sources */,
 				9EF276331DDABA5F0098BE99 /* ViewController.m in Sources */,
 				B64995181DF68B8F001D08F9 /* RoomController.m in Sources */,
+				B649952B1DF69735001D08F9 /* AEPageModel.m in Sources */,
 				9EF276301DDABA5F0098BE99 /* AppDelegate.m in Sources */,
 				B649951B1DF68B9F001D08F9 /* MyController.m in Sources */,
 				9EF2762D1DDABA5F0098BE99 /* main.m in Sources */,
+				B649952C1DF69735001D08F9 /* AEPageView.m in Sources */,
+				B649951F1DF6940F001D08F9 /* UADScrollView.m in Sources */,
 				B64995141DF68B7B001D08F9 /* MallController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
