@@ -19,8 +19,6 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 //    self.view.backgroundColor = [UIColor redColor];
-    
-    
 }
 +(void)setTabBarViewNav
 {
@@ -28,12 +26,10 @@
     UINavigationController *balanceNav = [[UINavigationController alloc] initWithRootViewController:balanceView];
     balanceNav.tabBarItem.title = @"首页";
     balanceNav.tabBarItem.image = [UIImage imageNamed:@""];
-    
     MallController *walletView = [[MallController alloc]init];
     UINavigationController *walletNav = [[UINavigationController alloc] initWithRootViewController:walletView];
     walletNav.tabBarItem.title = @"保险商城";
     walletNav.tabBarItem.image = [UIImage imageNamed:@""];
-    
     RoomController *checkView = [[RoomController alloc]init];
     UINavigationController *checkNav = [[UINavigationController alloc] initWithRootViewController:checkView];
     checkNav.tabBarItem.title = @"保险课堂";
@@ -45,16 +41,12 @@
     myNav.tabBarItem.image = [UIImage imageNamed:@""];
     ;
     UITabBarController *tabBarControl =[[UITabBarController alloc]init];
-
-//    tabBarControl.tabBar.selectedImageTintColor = [UIColor orangeColor];
     tabBarControl.tabBar.tintColor = [UIColor blueColor];
     tabBarControl.viewControllers = @[balanceNav,walletNav,checkNav,myNav];
-    //    self->view.window.rootViewController = tabBarControl;
-    AppDelegate *app = (AppDelegate*)[UIApplication sharedApplication].delegate;
-    
+    [[UITabBar appearance] setBarTintColor:[UIColor greenColor]];
+    AppDelegate *app = (AppDelegate *)[UIApplication sharedApplication].delegate;
     app.window.rootViewController =tabBarControl;
-    
-}
+ }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
