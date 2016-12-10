@@ -33,6 +33,9 @@
 		9EF2768D1DDAFF710098BE99 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EF276881DDAFF710098BE99 /* libWeChatSDK.a */; };
 		9EF2768E1DDAFF710098BE99 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9EF276891DDAFF710098BE99 /* README.txt */; };
 		9EF276901DDAFFF40098BE99 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EF2768F1DDAFFF40098BE99 /* libsqlite3.0.tbd */; };
+		B62815C91DFBA51C00E8A24B /* UIBarButtonItem+Badge.m in Sources */ = {isa = PBXBuildFile; fileRef = B62815C81DFBA51C00E8A24B /* UIBarButtonItem+Badge.m */; };
+		B62815CB1DFBB8A200E8A24B /* 00.png in Resources */ = {isa = PBXBuildFile; fileRef = B62815CA1DFBB8A200E8A24B /* 00.png */; };
+		B62815CD1DFBF3D300E8A24B /* icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B62815CC1DFBF3D300E8A24B /* icon@3x.png */; };
 		B64995111DF68B65001D08F9 /* HomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = B64995101DF68B65001D08F9 /* HomeController.m */; };
 		B64995141DF68B7B001D08F9 /* MallController.m in Sources */ = {isa = PBXBuildFile; fileRef = B64995131DF68B7B001D08F9 /* MallController.m */; };
 		B64995181DF68B8F001D08F9 /* RoomController.m in Sources */ = {isa = PBXBuildFile; fileRef = B64995171DF68B8F001D08F9 /* RoomController.m */; };
@@ -42,6 +45,9 @@
 		B64995261DF69725001D08F9 /* AEImagePlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = B64995241DF69725001D08F9 /* AEImagePlayerView.m */; };
 		B649952B1DF69735001D08F9 /* AEPageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B64995281DF69735001D08F9 /* AEPageModel.m */; };
 		B649952C1DF69735001D08F9 /* AEPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = B649952A1DF69735001D08F9 /* AEPageView.m */; };
+		B69274251DFA40FD00F35D5A /* HomeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B69274231DFA40FD00F35D5A /* HomeCell.m */; };
+		B69274261DFA40FD00F35D5A /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B69274241DFA40FD00F35D5A /* HomeCell.xib */; };
+		B69274281DFA777400F35D5A /* 01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B69274271DFA777400F35D5A /* 01.jpg */; };
 		CC651FCB6CD47506214E7696 /* libPods-HuiBaoXian.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5768B0E8683652C95054BF44 /* libPods-HuiBaoXian.a */; };
 /* End PBXBuildFile section */
 
@@ -105,6 +111,10 @@
 		9EF2768B1DDAFF710098BE99 /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
 		9EF2768C1DDAFF710098BE99 /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
 		9EF2768F1DDAFFF40098BE99 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		B62815C71DFBA51C00E8A24B /* UIBarButtonItem+Badge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Badge.h"; sourceTree = "<group>"; };
+		B62815C81DFBA51C00E8A24B /* UIBarButtonItem+Badge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Badge.m"; sourceTree = "<group>"; };
+		B62815CA1DFBB8A200E8A24B /* 00.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 00.png; sourceTree = "<group>"; };
+		B62815CC1DFBF3D300E8A24B /* icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@3x.png"; sourceTree = "<group>"; };
 		B649950F1DF68B65001D08F9 /* HomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeController.h; sourceTree = "<group>"; };
 		B64995101DF68B65001D08F9 /* HomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeController.m; sourceTree = "<group>"; };
 		B64995121DF68B7B001D08F9 /* MallController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MallController.h; sourceTree = "<group>"; };
@@ -123,6 +133,10 @@
 		B64995281DF69735001D08F9 /* AEPageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AEPageModel.m; sourceTree = "<group>"; };
 		B64995291DF69735001D08F9 /* AEPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEPageView.h; sourceTree = "<group>"; };
 		B649952A1DF69735001D08F9 /* AEPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AEPageView.m; sourceTree = "<group>"; };
+		B69274221DFA40FD00F35D5A /* HomeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeCell.h; sourceTree = "<group>"; };
+		B69274231DFA40FD00F35D5A /* HomeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeCell.m; sourceTree = "<group>"; };
+		B69274241DFA40FD00F35D5A /* HomeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeCell.xib; sourceTree = "<group>"; };
+		B69274271DFA777400F35D5A /* 01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 01.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,6 +228,7 @@
 				B64994FF1DF689D9001D08F9 /* My */,
 				9EF276371DDABA5F0098BE99 /* Assets.xcassets */,
 				B649951C1DF693C6001D08F9 /* Libs */,
+				B62815C01DFBA35D00E8A24B /* Category */,
 				9EF276731DDAF9840098BE99 /* Image */,
 				9EF276391DDABA5F0098BE99 /* LaunchScreen.storyboard */,
 				9EF2763C1DDABA5F0098BE99 /* Info.plist */,
@@ -270,6 +285,9 @@
 		9EF276731DDAF9840098BE99 /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				B62815CC1DFBF3D300E8A24B /* icon@3x.png */,
+				B62815CA1DFBB8A200E8A24B /* 00.png */,
+				B69274271DFA777400F35D5A /* 01.jpg */,
 			);
 			name = Image;
 			sourceTree = "<group>";
@@ -293,6 +311,16 @@
 				9EF2768C1DDAFF710098BE99 /* WXApiObject.h */,
 			);
 			name = WeiChatPay;
+			sourceTree = "<group>";
+		};
+		B62815C01DFBA35D00E8A24B /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				B62815C71DFBA51C00E8A24B /* UIBarButtonItem+Badge.h */,
+				B62815C81DFBA51C00E8A24B /* UIBarButtonItem+Badge.m */,
+			);
+			name = Category;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		B64994FF1DF689D9001D08F9 /* My */ = {
@@ -351,6 +379,9 @@
 		B64995041DF68ACB001D08F9 /* HomeView */ = {
 			isa = PBXGroup;
 			children = (
+				B69274221DFA40FD00F35D5A /* HomeCell.h */,
+				B69274231DFA40FD00F35D5A /* HomeCell.m */,
+				B69274241DFA40FD00F35D5A /* HomeCell.xib */,
 			);
 			name = HomeView;
 			sourceTree = "<group>";
@@ -548,7 +579,7 @@
 				TargetAttributes = {
 					9EF276271DDABA5E0098BE99 = {
 						CreatedOnToolsVersion = 8.0;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					9EF276401DDABA5F0098BE99 = {
 						CreatedOnToolsVersion = 8.0;
@@ -588,10 +619,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				9EF2763B1DDABA5F0098BE99 /* LaunchScreen.storyboard in Resources */,
+				B62815CD1DFBF3D300E8A24B /* icon@3x.png in Resources */,
+				B62815CB1DFBB8A200E8A24B /* 00.png in Resources */,
 				9EF276381DDABA5F0098BE99 /* Assets.xcassets in Resources */,
 				9EF276771DDAFCB10098BE99 /* AlipaySDK.bundle in Resources */,
 				9EF276361DDABA5F0098BE99 /* Main.storyboard in Resources */,
+				B69274261DFA40FD00F35D5A /* HomeCell.xib in Resources */,
 				9EF2768E1DDAFF710098BE99 /* README.txt in Resources */,
+				B69274281DFA777400F35D5A /* 01.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -669,12 +704,14 @@
 				B64995111DF68B65001D08F9 /* HomeController.m in Sources */,
 				9EF276331DDABA5F0098BE99 /* ViewController.m in Sources */,
 				B64995181DF68B8F001D08F9 /* RoomController.m in Sources */,
+				B69274251DFA40FD00F35D5A /* HomeCell.m in Sources */,
 				B649952B1DF69735001D08F9 /* AEPageModel.m in Sources */,
 				9EF276301DDABA5F0098BE99 /* AppDelegate.m in Sources */,
 				B649951B1DF68B9F001D08F9 /* MyController.m in Sources */,
 				9EF2762D1DDABA5F0098BE99 /* main.m in Sources */,
 				B649952C1DF69735001D08F9 /* AEPageView.m in Sources */,
 				B649951F1DF6940F001D08F9 /* UADScrollView.m in Sources */,
+				B62815C91DFBA51C00E8A24B /* UIBarButtonItem+Badge.m in Sources */,
 				B64995141DF68B7B001D08F9 /* MallController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

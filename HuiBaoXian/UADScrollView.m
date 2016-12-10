@@ -127,6 +127,7 @@
         CGFloat labelY = i * labelH;
         
         titleLabel.frame = CGRectMake(labelX, labelY, labelW, labelH);
+//        titleLabel.userInteractionEnabled = YES;
         
         titleLabel.text = objArray[i];
         

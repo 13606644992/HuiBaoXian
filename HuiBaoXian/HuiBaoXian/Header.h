@@ -12,8 +12,8 @@
 #pragma mark ----TheThird---------------
 #import "UIImageView+WebCache.h"
 #import "UIButton+WebCache.h"
-#import "SVProgressHUD/SVProgressHUD.h"
-
+#import <SVProgressHUD/SVProgressHUD.h>
+#import <Masonry.h>
 
 #pragma mark ----Controller---------------
 
@@ -24,6 +24,8 @@
 //轮播
 #import "AEImagePlayerView.h"
 #import "AEPageView.h"
+
+#import "UIBarButtonItem+Badge.h"
 
 
 

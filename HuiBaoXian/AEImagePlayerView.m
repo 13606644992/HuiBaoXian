@@ -121,12 +121,13 @@ typedef enum {
 
     //3,初始化页码显示器
     //3.1设置页码显示器参数
-    AEPageModel *model = [AEPageModel pageModelWithPageImage:[self pageImage] currentImage:[self currentImage] pages:self.downloadImages.count gapsize:6 imageSize:CGSizeMake(10, 10)];
+    AEPageModel *model = [AEPageModel pageModelWithPageImage:[self pageImage] currentImage:[self currentImage] pages:self.downloadImages.count gapsize:6 imageSize:CGSizeMake(8, 8)];
     
     //3.2创建显示器
     AEPageView *pv = [AEPageView pageViewWithModel:model];
     [self addSubview:pv];
     self.pageView = pv;
+//    self.pa
 //    pv.backgroundColor = [UIColor redColor];//调试-------------------
     
 }
@@ -245,7 +246,7 @@ typedef enum {
         self.pageView.center = CGPointMake(self.frame.size.width - self.pageView.pageWidth - 10, self.frame.size.height * 0.8);//这个10 是右边的边距 0.8是控制y值的 到时候这两个参数可以提到外面去
     }else{
         //显示左边
-        self.pageView.center = CGPointMake(self.pageView.pageWidth + 10, self.frame.size.height * 0.8);
+        self.pageView.center = CGPointMake(self.pageView.pageWidth -10, self.frame.size.height * 0.9);
     }
     self.pageView.frame = CGRectZero;
 }
@@ -257,10 +258,10 @@ typedef enum {
         self.pageView.center = CGPointMake(self.frame.size.width * 0.5, self.frame.size.height * 0.8);
     }else if (self.pageLocation == AEPageViewLocationRight){
         //显示右边
-        self.pageView.center = CGPointMake(self.frame.size.width - self.pageView.pageWidth - 10, self.frame.size.height * 0.8);//这个10 是右边的边距 0.8是控制y值的 到时候这两个参数可以提到外面去
+        self.pageView.center = CGPointMake(self.frame.size.width - self.pageView.pageWidth - 10, self.frame.size.height * 0.9);//这个10 是右边的边距 0.8是控制y值的 到时候这两个参数可以提到外面去
     }else{
         //显示左边
-        self.pageView.center = CGPointMake(self.pageView.pageWidth + 10, self.frame.size.height * 0.8);
+        self.pageView.center = CGPointMake(self.pageView.pageWidth-10, self.frame.size.height * 0.9);
     }
     self.pageView.frame = CGRectZero;
 }
