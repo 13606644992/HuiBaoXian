@@ -45,9 +45,14 @@
 		B64995261DF69725001D08F9 /* AEImagePlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = B64995241DF69725001D08F9 /* AEImagePlayerView.m */; };
 		B649952B1DF69735001D08F9 /* AEPageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B64995281DF69735001D08F9 /* AEPageModel.m */; };
 		B649952C1DF69735001D08F9 /* AEPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = B649952A1DF69735001D08F9 /* AEPageView.m */; };
+		B660BDC21DFE30CF000D1E7C /* HomeCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B660BDC11DFE30CF000D1E7C /* HomeCellModel.m */; };
+		B660BDC41DFE3611000D1E7C /* 02.png in Resources */ = {isa = PBXBuildFile; fileRef = B660BDC31DFE3611000D1E7C /* 02.png */; };
 		B69274251DFA40FD00F35D5A /* HomeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B69274231DFA40FD00F35D5A /* HomeCell.m */; };
 		B69274261DFA40FD00F35D5A /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B69274241DFA40FD00F35D5A /* HomeCell.xib */; };
 		B69274281DFA777400F35D5A /* 01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B69274271DFA777400F35D5A /* 01.jpg */; };
+		B69C51771DFE54A100C19D9E /* HomeSiftCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B69C51761DFE54A100C19D9E /* HomeSiftCell.m */; };
+		B69C51791DFE7EE300C19D9E /* messageCenter@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B69C51781DFE7EE300C19D9E /* messageCenter@3x.png */; };
+		B69C51801DFE85A200C19D9E /* HomeSiftCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B69C517F1DFE85A200C19D9E /* HomeSiftCell.xib */; };
 		CC651FCB6CD47506214E7696 /* libPods-HuiBaoXian.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5768B0E8683652C95054BF44 /* libPods-HuiBaoXian.a */; };
 /* End PBXBuildFile section */
 
@@ -133,10 +138,17 @@
 		B64995281DF69735001D08F9 /* AEPageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AEPageModel.m; sourceTree = "<group>"; };
 		B64995291DF69735001D08F9 /* AEPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEPageView.h; sourceTree = "<group>"; };
 		B649952A1DF69735001D08F9 /* AEPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AEPageView.m; sourceTree = "<group>"; };
+		B660BDC01DFE30CF000D1E7C /* HomeCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeCellModel.h; sourceTree = "<group>"; };
+		B660BDC11DFE30CF000D1E7C /* HomeCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeCellModel.m; sourceTree = "<group>"; };
+		B660BDC31DFE3611000D1E7C /* 02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 02.png; sourceTree = "<group>"; };
 		B69274221DFA40FD00F35D5A /* HomeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeCell.h; sourceTree = "<group>"; };
 		B69274231DFA40FD00F35D5A /* HomeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeCell.m; sourceTree = "<group>"; };
 		B69274241DFA40FD00F35D5A /* HomeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeCell.xib; sourceTree = "<group>"; };
 		B69274271DFA777400F35D5A /* 01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 01.jpg; sourceTree = "<group>"; };
+		B69C51751DFE54A100C19D9E /* HomeSiftCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeSiftCell.h; sourceTree = "<group>"; };
+		B69C51761DFE54A100C19D9E /* HomeSiftCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeSiftCell.m; sourceTree = "<group>"; };
+		B69C51781DFE7EE300C19D9E /* messageCenter@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "messageCenter@3x.png"; sourceTree = "<group>"; };
+		B69C517F1DFE85A200C19D9E /* HomeSiftCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeSiftCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -285,6 +297,8 @@
 		9EF276731DDAF9840098BE99 /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				B69C51781DFE7EE300C19D9E /* messageCenter@3x.png */,
+				B660BDC31DFE3611000D1E7C /* 02.png */,
 				B62815CC1DFBF3D300E8A24B /* icon@3x.png */,
 				B62815CA1DFBB8A200E8A24B /* 00.png */,
 				B69274271DFA777400F35D5A /* 01.jpg */,
@@ -382,6 +396,9 @@
 				B69274221DFA40FD00F35D5A /* HomeCell.h */,
 				B69274231DFA40FD00F35D5A /* HomeCell.m */,
 				B69274241DFA40FD00F35D5A /* HomeCell.xib */,
+				B69C51751DFE54A100C19D9E /* HomeSiftCell.h */,
+				B69C51761DFE54A100C19D9E /* HomeSiftCell.m */,
+				B69C517F1DFE85A200C19D9E /* HomeSiftCell.xib */,
 			);
 			name = HomeView;
 			sourceTree = "<group>";
@@ -389,6 +406,8 @@
 		B64995051DF68ACD001D08F9 /* HomeModel */ = {
 			isa = PBXGroup;
 			children = (
+				B660BDC01DFE30CF000D1E7C /* HomeCellModel.h */,
+				B660BDC11DFE30CF000D1E7C /* HomeCellModel.m */,
 			);
 			name = HomeModel;
 			sourceTree = "<group>";
@@ -579,7 +598,8 @@
 				TargetAttributes = {
 					9EF276271DDABA5E0098BE99 = {
 						CreatedOnToolsVersion = 8.0;
-						ProvisioningStyle = Manual;
+						DevelopmentTeam = C8QPW4Z45W;
+						ProvisioningStyle = Automatic;
 					};
 					9EF276401DDABA5F0098BE99 = {
 						CreatedOnToolsVersion = 8.0;
@@ -618,12 +638,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B69C51801DFE85A200C19D9E /* HomeSiftCell.xib in Resources */,
 				9EF2763B1DDABA5F0098BE99 /* LaunchScreen.storyboard in Resources */,
 				B62815CD1DFBF3D300E8A24B /* icon@3x.png in Resources */,
 				B62815CB1DFBB8A200E8A24B /* 00.png in Resources */,
 				9EF276381DDABA5F0098BE99 /* Assets.xcassets in Resources */,
 				9EF276771DDAFCB10098BE99 /* AlipaySDK.bundle in Resources */,
+				B660BDC41DFE3611000D1E7C /* 02.png in Resources */,
 				9EF276361DDABA5F0098BE99 /* Main.storyboard in Resources */,
+				B69C51791DFE7EE300C19D9E /* messageCenter@3x.png in Resources */,
 				B69274261DFA40FD00F35D5A /* HomeCell.xib in Resources */,
 				9EF2768E1DDAFF710098BE99 /* README.txt in Resources */,
 				B69274281DFA777400F35D5A /* 01.jpg in Resources */,
@@ -701,11 +724,13 @@
 			files = (
 				B64995251DF69725001D08F9 /* AEElement.m in Sources */,
 				B64995261DF69725001D08F9 /* AEImagePlayerView.m in Sources */,
+				B660BDC21DFE30CF000D1E7C /* HomeCellModel.m in Sources */,
 				B64995111DF68B65001D08F9 /* HomeController.m in Sources */,
 				9EF276331DDABA5F0098BE99 /* ViewController.m in Sources */,
 				B64995181DF68B8F001D08F9 /* RoomController.m in Sources */,
 				B69274251DFA40FD00F35D5A /* HomeCell.m in Sources */,
 				B649952B1DF69735001D08F9 /* AEPageModel.m in Sources */,
+				B69C51771DFE54A100C19D9E /* HomeSiftCell.m in Sources */,
 				9EF276301DDABA5F0098BE99 /* AppDelegate.m in Sources */,
 				B649951B1DF68B9F001D08F9 /* MyController.m in Sources */,
 				9EF2762D1DDABA5F0098BE99 /* main.m in Sources */,
@@ -870,7 +895,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = C8QPW4Z45W;
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -884,7 +909,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.baobao.HuiBaoXian;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.Huitestfire;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -896,7 +921,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = C8QPW4Z45W;
 				ENABLE_TESTABILITY = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -910,7 +935,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.baobao.HuiBaoXian;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.Huitestfire;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

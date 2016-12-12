@@ -14,6 +14,7 @@
 #import "UIButton+WebCache.h"
 #import <SVProgressHUD/SVProgressHUD.h>
 #import <Masonry.h>
+#import <MJRefresh.h>
 
 #pragma mark ----Controller---------------
 
@@ -46,3 +47,5 @@
 #define JiaCu  @"Helvetica-Bold"
 //请求时间
 #define waitTime   10.0f;
+
+#define SVProgress(AnyThing)      [SVProgressHUD showSuccessWithStatus:AnyThing];
