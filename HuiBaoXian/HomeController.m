@@ -33,6 +33,7 @@
 
 @implementation HomeController
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -116,7 +117,6 @@
         cell.model = mode;
         return cell;
     }
-    
     HomeCellModel *mode = [[HomeCellModel alloc] init];
     HomeSiftCell *cell = [HomeSiftCell cellWithTableView: tableView];
     cell.model = mode;
@@ -125,7 +125,7 @@
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
     if (section==0) {
-        return ScreenWindowHeight/3+ScreenWindowHeight/5+60;
+        return ScreenWindowHeight/4+ScreenWindowHeight/6+60;
     }else if (section==1){
         return 60;
     }
@@ -147,12 +147,11 @@
         [self setPlayerWithHeaderView:HeaderView];
         return HeaderView;
     }else if (section==1){
-        UIView *HeaderView2 = [self setSectionOneHeaderView];
-        return HeaderView2;
+        return [self setSectionOneHeaderView];
     }else
     {
-        UIView *HeaderView = [self setSectionOtherViewHeaderWithSection:section];
-        return HeaderView;
+
+        return [self setSectionOtherViewHeaderWithSection:section];
     }
     return nil;
 }
@@ -189,7 +188,6 @@
     }];
     return HeaderView2;
 }
-//
 -(UIView *)setSectionOtherViewHeaderWithSection:(NSInteger)section
 {
     UIView *HeaderView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, ScreenWindowWidth, ScreenWindowHeight/4)];
@@ -249,7 +247,7 @@
 #pragma mark -----ScrollViewDelegate---UADScroll------
 -(void)setPlayerWithHeaderView:(UIView *)headerView
 {
-    AEImagePlayerView *playerView = [[AEImagePlayerView alloc] initWithFrame:CGRectMake(0, 0, ScreenWindowWidth, ScreenWindowHeight/3)];
+    AEImagePlayerView *playerView = [[AEImagePlayerView alloc] initWithFrame:CGRectMake(0, 0, ScreenWindowWidth, ScreenWindowHeight/4)];
     _playerView = playerView;
     playerView.images = self.locaImages;//设置默认图片
     playerView.delegate = self;
@@ -261,7 +259,7 @@
         make.left.equalTo(headerView).with.offset(10);
         make.top.mas_equalTo(playerView.mas_bottom).with.offset(10);
         make.right.equalTo(headerView).with.offset(-10);
-        make.height.equalTo(@(ScreenWindowHeight/5));
+        make.height.equalTo(@(ScreenWindowHeight/6));
     }];
     [self setFarViewWith:self.farView];
     
@@ -291,24 +289,19 @@
     CGFloat kuan = ScreenWindowWidth-leftStart-20;
     UADScrollView *ccpView = [[UADScrollView alloc] initWithFrame:CGRectMake(leftStart, 0, kuan,40)];
     ccpView.titleArray = [NSArray arrayWithObjects:@"iPhone6s上线32G内存手机你怎么看？",@"亲爱的朋友们2016年还有100天就要过去了,2017年您准备好了吗?",@"今年双11您预算了几个月的工资？",@"高德与百度互掐，你更看好哪方？", nil];
-    
     ccpView.titleFont = 13;
-    
     ccpView.titleColor = [UIColor blackColor];
-    
     ccpView.BGColor = [UIColor whiteColor];
-    
     [ccpView clickTitleLabel:^(NSInteger index,NSString *titleString) {
         
         NSLog(@"%ld-----%@",index,titleString);
         
     }];
     [self.bulleView addSubview:ccpView];
-
 }
 -(void)setFarViewWith:(UIView *)view{
     NSInteger count = 5;//设置一排view的个数
-    NSInteger height = ScreenWindowHeight/5;//设置view的高度
+    NSInteger height = ScreenWindowHeight/6;//设置view的高度
     CGFloat kuan = (ScreenWindowWidth-20)/count;
     
     for (int i = 0; i < count; i ++) {
@@ -316,20 +309,18 @@
         [button setTitle:self.farTitleArrays[i] forState:UIControlStateNormal];
         [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         
-        [button setImage:[UIImage imageNamed:@"icon@3x"] forState:UIControlStateNormal];
-        button.imageEdgeInsets = UIEdgeInsetsMake(ScreenWindowWidth/16, 10, 60, button.titleLabel.bounds.size.width);
+        [button setImage:[UIImage imageNamed:@"ico@3x"] forState:UIControlStateNormal];
+        button.imageEdgeInsets = UIEdgeInsetsMake(ScreenWindowWidth/16, 10, 50, button.titleLabel.bounds.size.width);
         if (i==0) {
-            button.imageEdgeInsets = UIEdgeInsetsMake(ScreenWindowWidth/16, 10, 60, button.titleLabel.bounds.size.width-15);
+            button.imageEdgeInsets = UIEdgeInsetsMake(ScreenWindowWidth/16, 10, 50, button.titleLabel.bounds.size.width-15);
         }
         button.titleLabel.font = [UIFont systemFontOfSize:14];
         button.titleEdgeInsets = UIEdgeInsetsMake(80, -button.titleLabel.bounds.size.width-30, 10, 0);
         button.tag = i+1;
         button.frame = CGRectMake(i*kuan, 0, kuan, height);
-        
         [button addTarget:self action:@selector(farClick:) forControlEvents:UIControlEventTouchUpInside];
         [view addSubview:button];
     }
-        
 }
 -(void)siftBtnClick:(UIButton *)sender
 {
@@ -387,7 +378,6 @@
     if (!_bulletinImg) {
         _bulletinImg = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"00"]];
     }
-    
     return _bulletinImg;
 }
 -(UILabel *)bulletinLab
