@@ -143,17 +143,11 @@
 -(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
     if (section==0) {
-        UIView *HeaderView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, ScreenWindowWidth, ScreenWindowHeight/3+ScreenWindowHeight/5+60)];
-        [self setPlayerWithHeaderView:HeaderView];
-        return HeaderView;
+        return [self setPlayerWithHeaderView];
     }else if (section==1){
         return [self setSectionOneHeaderView];
-    }else
-    {
-
-        return [self setSectionOtherViewHeaderWithSection:section];
     }
-    return nil;
+    return [self setSectionOtherViewHeaderWithSection:section];
 }
 -(UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section
 {
@@ -163,7 +157,6 @@
     }
     return nil;
 }
-
 -(UIView *)setSectionOneHeaderView
 {
     UIView *HeaderView2 = [[UIView alloc] initWithFrame:CGRectMake(0, 10, ScreenWindowWidth-20, 60)];
@@ -245,8 +238,9 @@
     
 }
 #pragma mark -----ScrollViewDelegate---UADScroll------
--(void)setPlayerWithHeaderView:(UIView *)headerView
+-(UIView *)setPlayerWithHeaderView
 {
+    UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, ScreenWindowWidth, ScreenWindowHeight/3+ScreenWindowHeight/5+60)];
     AEImagePlayerView *playerView = [[AEImagePlayerView alloc] initWithFrame:CGRectMake(0, 0, ScreenWindowWidth, ScreenWindowHeight/4)];
     _playerView = playerView;
     playerView.images = self.locaImages;//设置默认图片
@@ -274,7 +268,7 @@
     [self.bulleView addSubview:self.bulletinImg];
 
     [self.bulletinImg mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(self.bulleView);
+        make.left.equalTo(self.bulleView).with.offset(5);
         make.top.equalTo(self.bulleView).with.offset(12.5);
         make.size.mas_equalTo(CGSizeMake(15, 15));
     }];
@@ -298,6 +292,7 @@
         
     }];
     [self.bulleView addSubview:ccpView];
+    return headerView;
 }
 -(void)setFarViewWith:(UIView *)view{
     NSInteger count = 5;//设置一排view的个数
